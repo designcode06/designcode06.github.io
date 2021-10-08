@@ -1,0 +1,123 @@
+/* 
+Colors
+-------------
+- Primary: #0003c7
+Tints: #3e4bc6, #7684d3
+Shades: #000e8e, #00125e
+- Secondary: #19b2db
+Tints: #36c9ff, #69dfff, #9febff
+Shades: #0088a8
+- Text Color: #262635
+
+Sizing System
+-------------
+https://uniformcss.com/docs/sizing-system/#sizes
+*/
+
+/* ******************* */
+/* GENERAL */
+/* ******************* */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #262635;
+}
+
+/* ******************* */
+/* LAYOUT */
+/* ******************* */
+
+.section {
+  margin-bottom: 7.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 2.4rem;
+}
+
+.center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+/* ******************* */
+/* HEADINGS */
+/* ******************* */
+
+.heading-secondary {
+  font-size: 3.2rem;
+  margin-bottom: 4.8rem;
+  font-weight: 600;
+}
+
+/* ******************* */
+/* LINKS */
+/* ******************* */
+
+.link:link,
+.link:visited {
+  color: #262635;
+  transition: all 0.3s;
+  text-decoration: none;
+  border-bottom: 1px solid #262635;
+}
+
+.link:hover,
+.link:active {
+  color: #666675;
+  border-bottom: 1px solid transparent;
+}
+
+.btn {
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn--primary:link,
+.btn--primary:visited {
+  background-color: #0003c7;
+  color: #fff;
+}
+
+.btn--primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  transform: scaleX(0);
+  background-color: #19b2db;
+  transition: all 0.3s ease;
+}
+
+.btn--primary:hover::before {
+  transform: scaleX(1);
+}

@@ -1,0 +1,65 @@
+/* ******************* */
+/* BELOW 1000px */
+/* ******************* */
+
+@media (max-width: 62.6em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .project {
+    width: 50%;
+  }
+}
+
+/* ******************* */
+/* BELOW 720px */
+/* ******************* */
+
+@media (max-width: 45em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* ******************* */
+/* BELOW 600px */
+/* ******************* */
+
+@media (max-width: 37.5em) {
+  .hero-heading {
+    font-size: 5.6rem;
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  .project-description {
+    font-size: 2.4rem;
+  }
+}
+
+/* ******************* */
+/* BELOW 500px */
+/* ******************* */
+
+@media (max-width: 31.25em) {
+  .hero-heading {
+    font-size: 3.6rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.4rem;
+  }
+}
+
+/* ******************* */
+/* BELOW 400px */
+/* ******************* */
+
+@media (max-width: 25em) {
+  .hero-subheading {
+    font-size: 1.8rem;
+  }
+}
