@@ -1,65 +1,85 @@
-/* ******************* */
+/* ******************** */
 /* BELOW 1000px */
-/* ******************* */
+/* ******************** */
 
-@media (max-width: 62.6em) {
+@media (max-width: 62.5em) {
+  .hero {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-img {
+    display: none;
+  }
+}
+
+/* ******************** */
+/* BELOW 750px */
+/* ******************** */
+
+@media (max-width: 46.8em) {
   html {
     font-size: 56.25%;
   }
+}
+
+/* ******************** */
+/* BELOW 650px */
+/* ******************** */
+
+@media (max-width: 40.6em) {
+  .projects {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 
   .project {
-    width: 50%;
+    width: 75%;
   }
 }
 
-/* ******************* */
-/* BELOW 720px */
-/* ******************* */
+/* ******************** */
+/* BELOW 500px */
+/* ******************** */
 
-@media (max-width: 45em) {
+@media (max-width: 31.25em) {
   html {
     font-size: 50%;
   }
+
+  .navigation {
+    justify-content: center;
+  }
+
+  .main-nav {
+    display: none;
+  }
 }
 
-/* ******************* */
-/* BELOW 600px */
-/* ******************* */
+/* ******************** */
+/* BELOW 400px */
+/* ******************** */
 
-@media (max-width: 37.5em) {
+@media (max-width: 25em) {
   .hero-heading {
-    font-size: 5.6rem;
+    font-size: 4.8rem;
   }
 
   .project {
     width: 100%;
   }
-
-  .project-description {
-    font-size: 2.4rem;
-  }
 }
 
-/* ******************* */
-/* BELOW 500px */
-/* ******************* */
+/* ******************** */
+/* BELOW 300px */
+/* ******************** */
 
-@media (max-width: 31.25em) {
+@media (max-width: 18.75em) {
   .hero-heading {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
   }
 
-  .heading-secondary {
-    font-size: 2.4rem;
-  }
-}
-
-/* ******************* */
-/* BELOW 400px */
-/* ******************* */
-
-@media (max-width: 25em) {
-  .hero-subheading {
-    font-size: 1.8rem;
+  .section-heading {
+    font-size: 3.2rem;
   }
 }

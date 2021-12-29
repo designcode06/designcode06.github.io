@@ -1,136 +1,234 @@
-/* ******************* */
-/* HERO SECTION */
-/* ******************* */
-
-.section-hero {
-  min-height: 100vh;
+/* ******************** */
+/* GENERAL */
+/* ******************** */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  width: 3.2rem;
-  height: auto;
-  margin-bottom: 5.6rem;
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #222;
+}
+
+/* ******************** */
+/* REUSABLE COMPONENTS */
+/* ******************** */
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+.section {
+  padding: 6.4rem 0;
+}
+
+/* BUTTONS */
+.btn {
+  text-decoration: none;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: inline-block;
+  letter-spacing: 0.2rem;
+  position: relative;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #0057e2;
+  transition: 0.3s all ease-in-out;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: #408eff;
+}
+
+/* HEADINGS */
+.section-heading {
+  font-size: 4.8rem;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+/* LINKS */
+.link {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s all ease-in-out;
+  border-bottom: 1px solid #222;
+}
+
+.link:hover,
+.link:active {
+  color: #999;
+  border-bottom: 1px solid transparent;
+}
+
+/* ******************** */
+/* HEADER */
+/* ******************** */
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAVIGATION */
+.navigation {
+  width: 100%;
+  padding: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: 5rem;
+  opacity: 0.5;
+  transition: 0.3s all ease-in-out;
+}
+
+.header-logo:hover,
+.header-logo:active {
+  opacity: 1;
+}
+
+.main-nav {
+  display: flex;
+  gap: 4.8rem;
+}
+
+.main-nav-item {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.5;
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: 0.3s all ease-in-out;
+}
+
+.main-nav-item:hover,
+.main-nav-item:active {
+  opacity: 1;
+}
+
+/* HERO SECTION */
+.hero {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
 }
 
 .hero-heading {
   font-size: 6.4rem;
-  font-weight: 600;
-  margin-bottom: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
 }
 
 .hero-subheading {
-  font-size: 2.4rem;
-  font-weight: 400;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin-bottom: 4.8rem;
 }
 
-.hero-buttons {
-  margin-top: 5.6rem;
-  display: flex;
+.hero-img {
+  max-width: 48rem;
+  height: auto;
+  opacity: 0.5;
+}
+
+/* ******************** */
+/* MY WORK */
+/* ******************** */
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.4rem;
-}
-
-/* ******************* */
-/* PROJECTS SECTION */
-/* ******************* */
-
-.projects-grid {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  overflow: hidden;
+  background-color: #fff;
 }
 
 .project {
-  padding: 1.2rem;
-  width: 33.33%;
-  flex-shrink: 0;
+  transition: 0.3s all ease-in-out;
+  width: 100%;
   height: auto;
 }
 
-.project-container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  overflow: hidden;
+.project:hover,
+.project:active {
+  transform: scale(105%);
 }
 
 .project-img {
   width: 100%;
-  height: 100%;
 }
 
-.project-overlay {
-  position: absolute;
-  padding: 2.4rem;
+/* ******************** */
+/* ABOUT ME */
+/* ******************** */
+.about-me {
+  padding-bottom: 12.8rem;
+}
+
+.about-me .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-
-  background-color: #262635;
-  opacity: 0;
-  transition: all 0.8s ease;
 }
 
-.project-overlay:hover {
-  opacity: 1;
-}
-
-.project-description {
-  color: #fff;
+.about-me-text {
   font-size: 1.8rem;
-  margin-bottom: 1.8rem;
+  font-weight: 400;
+  max-width: 96rem;
+  text-align: center;
+  line-height: 1.5;
 }
 
-/* ******************* */
-/* ABOUT SECTION */
-/* ******************* */
-
-.about-text-box {
+/* ******************** */
+/* FOOTER */
+/* ******************** */
+.footer {
+  background-color: #111;
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  max-width: 72rem;
+  align-items: center;
+  justify-content: center;
+  padding: 3.2rem 0;
 }
-
-.about-text {
-  font-size: 1.8rem;
-}
-
-/* ******************* */
-/* CONTACT SECTION */
-/* ******************* */
 
 .social-links {
-  margin-top: 5.6rem;
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
-.social-link:link,
-.social-link:visited {
-  font-size: 3.2rem;
-  transition: all 0.3s;
-  color: #262635;
+.social-link {
+  color: #fff;
+  opacity: 0.5;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: 0.3s all ease-in-out;
 }
 
 .social-link:hover,
 .social-link:active {
-  color: #666675;
-}
-
-.scratch-cat {
-  width: 3.2rem;
-}
-
-.test-icon {
-  width: 24px;
+  opacity: 1;
 }
