@@ -180,6 +180,7 @@ body {
 
 .project-img {
   width: 100%;
+  pointer-events: none;
 }
 
 /* ******************** */
