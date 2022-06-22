@@ -30,6 +30,10 @@ body {
   padding: 6.4rem 0;
 }
 
+img {
+  pointer-events: none;
+}
+
 /* BUTTONS */
 .btn {
   text-decoration: none;
@@ -181,7 +185,6 @@ body {
 
 .project-img {
   width: 100%;
-  pointer-events: none;
 }
 
 /* ******************** */
